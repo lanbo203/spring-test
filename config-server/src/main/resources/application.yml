@@ -1,0 +1,45 @@
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:9000/eureka/
+#server:
+#  port: 9009
+#spring:
+#  application:
+#    name: config-server
+#
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://github.com/forezp/SpringcloudConfig/
+#          searchPaths: respo
+#          username: lanbo203
+#          password: lanbo5203
+#      label: master
+
+
+server:
+  port: 8888
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/lanbo203/test.git
+          username: lanbo203
+          password: lanbo5203
+          searchPaths: data
+
+
+
+#server:
+#  port: 8888
+#spring:
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://github.com/lanbo203/test
+#          searchPaths: my-sample-config
